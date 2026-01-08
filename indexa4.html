@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Border Example</title>
+    <style>
+        .image-border-div {
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            text-align: center;
+            line-height: 160px; /* Vertically center the text */
+
+            /* Border properties */
+            border: 30px solid transparent; /* Needed for border-image to work */
+            border-image-source: url('border.png'); /* Path to your border image */
+            border-image-slice: 30;          /* Slice 30px from each side of the image */
+            border-image-repeat: stretch;     /* Stretch the border sections */
+            border-image-width: 30px;         /* Width of the border from the image */
+        }
+    </style>
+</head>
+<body>
+    <h2>Div with Image Border</h2>
+
+    <div class="image-border-div">
+        Content inside the bordered div
+    </div>
+</body>
+</html>

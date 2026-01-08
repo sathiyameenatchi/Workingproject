@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 2D Translate Example</title>
+    <style>
+        .moveBox {
+            width: 150px;
+            height: 80px;
+            background-color: skyblue;
+            border: 3px solid #000;
+            text-align: center;
+            line-height: 80px;
+            font-family: Arial, sans-serif;
+            transition: 0.4s; /* smooth movement */
+        }
+
+        /* Move the element using translate() */
+        .moveBox:hover {
+            transform: translate(80px, 40px); 
+        }
+    </style>
+</head>
+<body>
+
+<h2>CSS 2D Translate() Demo</h2>
+
+<div class="moveBox">Hover to Move</div>
+
+</body>
+</html>
